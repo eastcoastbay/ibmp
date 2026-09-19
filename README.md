@@ -1,23 +1,11 @@
-# IBMP GitHub Pages Starter
+# IBMP Quadratics v2
 
-Upload all files in this folder to the root of a public GitHub repository.
+Updated site with the full 10-section Quadratic Functions structure and the workbook style:
+- Korean concept explanations
+- English questions
+- Worked examples
+- Level 1 Easy / Level 2 Medium / Level 3 Hard / Level 4 Application
+- Hints and solutions
+- Browser-saved progress
 
-Then:
-1. GitHub → Settings → Pages
-2. Build and deployment → Deploy from a branch
-3. Branch: main
-4. Folder: / (root)
-5. Save
-
-Your free site will appear at:
-https://YOUR-USERNAME.github.io/REPOSITORY-NAME/
-
-Files:
-- index.html — homepage
-- aa.html — AA page
-- ai.html — AI page
-- quadratics.html — first chapter
-- styles.css — visual design
-- script.js — progress tracking + hint/solution buttons
-
-The Quadratics progress is saved locally in the student's browser.
+Upload these files to the root of your existing `eastcoastbay/ibmp` repository and replace the files with the same names. GitHub Pages will redeploy automatically.
