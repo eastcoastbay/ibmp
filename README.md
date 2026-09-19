@@ -1,11 +1,22 @@
-# IBMP Quadratics v2
+# IBMP Algebra v3
 
-Updated site with the full 10-section Quadratic Functions structure and the workbook style:
-- Korean concept explanations
-- English questions
-- Worked examples
-- Level 1 Easy / Level 2 Medium / Level 3 Hard / Level 4 Application
-- Hints and solutions
-- Browser-saved progress
+This version makes **Algebra → Simple Algebra** the first live chapter.
 
-Upload these files to the root of your existing `eastcoastbay/ibmp` repository and replace the files with the same names. GitHub Pages will redeploy automatically.
+Included:
+- 1.1 식의 정리
+- 1.2 복잡한 곱셈식과 나눗셈식의 지수 계산
+- Key Ideas
+- Level 1 Easy
+- Level 2 Medium
+- Level 3 Hard
+- Level 4 Application
+- Practice Exam Questions
+- Full answer key
+
+## Update your existing GitHub Pages site
+Upload these files to your existing `eastcoastbay/ibmp` repository and commit the changes.
+
+The site URL remains:
+https://eastcoastbay.github.io/ibmp/
+
+Note: some expressions in the original pasted draft did not show division symbols clearly. In this web version, obvious division expressions were normalized using `÷` based on the provided answer key.

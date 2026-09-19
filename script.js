@@ -1,1 +1,6 @@
-const boxes=[...document.querySelectorAll('[data-progress]')];const bar=document.getElementById('progressBar');const text=document.getElementById('progressText');const key='ibmp-quadratics-v2-progress';function update(save=true){const done=boxes.filter(b=>b.checked).length;if(bar)bar.style.width=(done/boxes.length*100)+'%';if(text)text.textContent=`${done} / ${boxes.length} sections complete`;if(save)localStorage.setItem(key,JSON.stringify(boxes.map(b=>b.checked)))}const saved=JSON.parse(localStorage.getItem(key)||'[]');boxes.forEach((b,i)=>{b.checked=!!saved[i];b.addEventListener('change',()=>update())});update(false);document.querySelectorAll('.reveal').forEach(btn=>btn.addEventListener('click',()=>{const t=document.getElementById(btn.dataset.target);if(t)t.classList.toggle('hidden')}));
+document.querySelectorAll('.reveal').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const target=document.getElementById(btn.dataset.target);
+    if(target) target.classList.toggle('hidden');
+  });
+});
