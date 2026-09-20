@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expansion and Factorisation — IBMP</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html">IBMP</a>
+  <nav><a href="aa.html">AA</a><a href="ai.html">AI</a><a href="index.html">Home</a></nav>
+</header>
+
+<main class="page wide">
+  <div class="eyebrow">Algebra · Chapter 02</div>
+  <h1>Expansion and Factorisation</h1>
+  <p class="lead">전개와 인수분해의 기본 원리부터 이차식·삼차식의 공식까지 익히고, 난이도별 문제로 반복 연습합니다.</p>
+
+  <div class="chapter-meta">
+    <span>17 vocabulary terms</span><span>7 concept blocks</span><span>5 practice levels</span><span>Full answer key</span>
+  </div>
+
+  <section id="vocabulary" style="padding:28px;margin:30px 0;background:#fff;border:1px solid #e2e4ea;border-radius:16px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:20px;">
+      <div>
+        <div class="eyebrow">Key Vocabulary · 핵심 용어</div>
+        <h2 style="margin:0 0 6px;font-size:28px;letter-spacing:-0.035em;">Chapter 2 Vocabulary</h2>
+        <p style="margin:0;color:#737883;">이 챕터에서 자주 사용하는 영어 수학 용어입니다.</p>
+      </div>
+      <span style="flex:0 0 auto;padding:6px 10px;background:#efedff;color:#5f56cc;border-radius:999px;font-size:11px;font-weight:800;">17 terms</span>
+    </div>
+    <div style="overflow:hidden;border:1px solid #e5e6eb;border-radius:12px;">
+      <table style="width:100%;border-collapse:collapse;background:#fff;">
+        <thead>
+          <tr>
+            <th style="padding:12px 16px;text-align:left;background:#f7f6ff;color:#514ca0;font-size:12px;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid #e5e6eb;">English</th>
+            <th style="padding:12px 16px;text-align:left;background:#f7f6ff;color:#514ca0;font-size:12px;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid #e5e6eb;">한국어</th>
+          </tr>
+        </thead>
+        <tbody><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">expansion</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">전개</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">expand</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">전개하다</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">factorisation</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">인수분해</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">factorise</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">인수분해하다</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">brackets</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">괄호</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">distributive law</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">분배법칙</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">common factor</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">공통인수</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">like terms</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">동류항</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">quadratic expression</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">이차식</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">cubic expression</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">삼차식</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">perfect square</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">완전제곱식</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">perfect square formula</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">완전제곱 공식</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">sum</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">합</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">difference</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">차</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">reverse</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">역 / 반대</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">coefficient</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">계수</td></tr><tr><td style="padding:12px 16px;border-bottom:1px solid #ececf1;font-weight:700;">constant term</td><td style="padding:12px 16px;border-bottom:1px solid #ececf1;">상수항</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <aside class="toc">
+    <div class="eyebrow">Contents</div>
+    <a href="#vocabulary">Key Vocabulary · 핵심 용어</a>
+    <a href="#s21">2.1 식의 전개</a>
+    <a href="#s212">2.1.2 Expanding Two Brackets</a>
+    <a href="#s213">2.1.3 Perfect Square Formulae</a>
+    <a href="#s214">2.1.4 Difference of Two Squares</a>
+    <a href="#s221">2.2.1 공통인수</a>
+    <a href="#s222">2.2.2 이차식 인수분해</a>
+    <a href="#s223">2.2.3 삼차식 인수분해</a>
+    <a href="#keys">Key Ideas</a>
+    <a href="#level1">Level 1 · Easy</a>
+    <a href="#level2">Level 2 · Medium</a>
+    <a href="#level3">Level 3 · Hard</a>
+    <a href="#level4">Level 4 · Application</a>
+    <a href="#level5">Level 5 · Practice Exam</a>
+    <a href="#answers">Answer Key</a>
+  </aside>
+
+  <section id="s21" class="lesson">
+    <div class="lesson-head"><span class="num">2.1</span><div><h2>식의 전개</h2><p>분배법칙을 이용해 괄호를 없애기</p></div></div>
+    <div class="key-box">
+      <strong>Distributive Law · 분배법칙</strong>
+      <p><b>a(b + c) = ab + ac</b></p>
+      <p><b>a(b - c) = ab - ac</b></p>
+    </div>
+    <div class="example"><div class="tag">Example</div><p><b>3(x + 4)</b></p><div class="solution">3 × x + 3 × 4 = <b>3x + 12</b></div></div>
+  </section>
+
+  <section id="s212" class="lesson">
+    <div class="lesson-head"><span class="num">2.1.2</span><div><h2>Expanding Two Brackets</h2><p>두 괄호의 모든 항을 서로 곱한 뒤 동류항 정리</p></div></div>
+    <div class="key-box">
+      <p><b>(x + a)(x + b) = x² + (a + b)x + ab</b></p>
+      <p><b>(x - a)(x - b) = x² - (a + b)x + ab</b></p>
+      <p><b>(x + a)(x - b) = x² + (a - b)x - ab</b></p>
+    </div>
+    <div class="example"><div class="tag">Example</div><p><b>(x + 3)(x + 5)</b></p><div class="solution">x² + 5x + 3x + 15 = <b>x² + 8x + 15</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>(x - 2)(x - 7)</b></p><div class="solution">x² - 7x - 2x + 14 = <b>x² - 9x + 14</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>(x + 4)(x - 6)</b></p><div class="solution">x² - 6x + 4x - 24 = <b>x² - 2x - 24</b></div></div>
+  </section>
+
+  <section id="s213" class="lesson">
+    <div class="lesson-head"><span class="num">2.1.3</span><div><h2>Perfect Square Formulae</h2><p>완전제곱 공식</p></div></div>
+    <div class="key-box">
+      <p><b>(a + b)² = a² + 2ab + b²</b></p>
+      <p><b>(a - b)² = a² - 2ab + b²</b></p>
+    </div>
+    <div class="example"><div class="tag">Example</div><p><b>(x + 5)²</b></p><div class="solution">x² + 2(x)(5) + 5² = <b>x² + 10x + 25</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>(x - 3)²</b></p><div class="solution">x² - 2(x)(3) + 3² = <b>x² - 6x + 9</b></div></div>
+  </section>
+
+  <section id="s214" class="lesson">
+    <div class="lesson-head"><span class="num">2.1.4</span><div><h2>Difference of Two Squares</h2><p>두 제곱의 차 공식</p></div></div>
+    <div class="key-box"><p><b>(a + b)(a - b) = a² - b²</b></p></div>
+    <div class="example"><div class="tag">Example</div><p><b>(x + 4)(x - 4)</b></p><div class="solution">x² - 4² = <b>x² - 16</b></div></div>
+  </section>
+
+  <section id="s221" class="lesson">
+    <div class="lesson-head"><span class="num">2.2.1</span><div><h2>공통인수가 있는 경우 인수분해</h2><p>모든 항에 공통으로 들어 있는 인수 먼저 묶기</p></div></div>
+    <div class="key-box"><p><b>ab + ac = a(b + c)</b></p><p><b>ab - ac = a(b - c)</b></p></div>
+    <div class="example"><div class="tag">Example</div><p><b>6x + 9</b></p><div class="solution"><b>3(2x + 3)</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>8y - 12</b></p><div class="solution"><b>4(2y - 3)</b></div></div>
+  </section>
+
+  <section id="s222" class="lesson">
+    <div class="lesson-head"><span class="num">2.2.2</span><div><h2>이차식의 인수분해</h2><p>전개의 역과정을 이용해 두 괄호로 나타내기</p></div></div>
+    <div class="key-box">
+      <p><b>x² + (a + b)x + ab = (x + a)(x + b)</b></p>
+      <p><b>x² - (a + b)x + ab = (x - a)(x - b)</b></p>
+      <p><b>x² + (a - b)x - ab = (x + a)(x - b)</b></p>
+      <p><b>ax² + bx + c = (px + q)(rx + s)</b>, where pr = a, qs = c, and ps + qr = b</p>
+      <p><b>a² - b² = (a + b)(a - b)</b></p>
+    </div>
+    <div class="example"><div class="tag">Example</div><p><b>x² - 8x + 15</b></p><div class="solution">곱해서 15, 더해서 -8이 되는 두 수는 -3, -5이므로 <b>(x - 3)(x - 5)</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>x² - 2x - 15</b></p><div class="solution">곱해서 -15, 더해서 -2가 되는 두 수는 3, -5이므로 <b>(x + 3)(x - 5)</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>2x² + 7x + 3</b></p><div class="solution">pr = 2, qs = 3, ps + qr = 7을 만족시키면 <b>(2x + 1)(x + 3)</b><br><br>Check: 2x² + 6x + x + 3 = 2x² + 7x + 3</div></div>
+  </section>
+
+  <section id="s223" class="lesson">
+    <div class="lesson-head"><span class="num">2.2.3</span><div><h2>삼차식의 인수분해</h2><p>합의 세제곱과 차의 세제곱 공식</p></div></div>
+    <div class="key-box">
+      <p><b>a³ + b³ = (a + b)(a² - ab + b²)</b></p>
+      <p><b>a³ - b³ = (a - b)(a² + ab + b²)</b></p>
+    </div>
+    <div class="example"><div class="tag">Example</div><p><b>x³ + 8</b></p><div class="solution">x³ + 2³ = <b>(x + 2)(x² - 2x + 4)</b></div></div>
+    <div class="example"><div class="tag">Example</div><p><b>x³ - 27</b></p><div class="solution">x³ - 3³ = <b>(x - 3)(x² + 3x + 9)</b></div></div>
+  </section>
+
+  <section id="keys" class="lesson">
+    <div class="lesson-head"><span class="num">★</span><div><h2>Key Ideas</h2><p>꼭 기억해야 할 12가지</p></div></div>
+    <ol class="key-list">
+      <li>Expanding means removing brackets by multiplying each term inside the brackets.</li>
+      <li>Use the distributive law to expand expressions such as a(b + c) and a(b - c).</li>
+      <li>When expanding two brackets, multiply every term in the first bracket by every term in the second bracket.</li>
+      <li>Like terms should be collected after expanding.</li>
+      <li>Perfect square expressions have a middle term of 2ab or -2ab.</li>
+      <li>The difference of two squares has the form a² - b².</li>
+      <li>Factorising is the reverse process of expanding.</li>
+      <li>When factorising, always check for a common factor first.</li>
+      <li>To factorise x² + bx + c, find two numbers that multiply to c and add to b.</li>
+      <li>To factorise ax² + bx + c, find factors that multiply to a and c, and give the correct middle term.</li>
+      <li>Sum and difference of cubes follow special formulae and cannot be factorised like simple quadratics.</li>
+      <li>Always check factorisation by expanding the brackets again.</li>
+    </ol>
+  </section>
+
+  <section id="level1" class="lesson exercise">
+    <div class="lesson-head"><span class="num">L1</span><div><h2>Level 1 · Easy</h2><p>한 괄호 전개와 공통인수 묶기</p></div></div>
+    <h3>1.1 Expand the following expressions.</h3><ol class="questions"><li>2(x + 3)</li><li>4(x + 5)</li><li>3(a + 2)</li><li>5(y + 4)</li><li>6(m + 1)</li><li>7(p + 2)</li><li>3(x - 4)</li><li>5(a - 3)</li><li>2(y - 6)</li><li>4(m - 5)</li><li>6(p - 2)</li><li>8(k - 1)</li></ol>
+    <h3>1.2 Factorise the following expressions by taking out the common factor.</h3><ol class="questions"><li>3x + 6</li><li>4x + 8</li><li>5a + 10</li><li>6y + 12</li><li>2m + 14</li><li>7p + 21</li><li>3x - 9</li><li>4a - 12</li><li>5y - 20</li><li>6m - 18</li><li>8p - 16</li><li>10k - 30</li></ol>
+    <button class="reveal" data-target="ans-l1">Show Level 1 answers</button>
+    <div id="ans-l1" class="answer hidden"><h4>1.1</h4><ol class="questions"><li>2x + 6</li><li>4x + 20</li><li>3a + 6</li><li>5y + 20</li><li>6m + 6</li><li>7p + 14</li><li>3x - 12</li><li>5a - 15</li><li>2y - 12</li><li>4m - 20</li><li>6p - 12</li><li>8k - 8</li></ol><h4>1.2</h4><ol class="questions"><li>3(x + 2)</li><li>4(x + 2)</li><li>5(a + 2)</li><li>6(y + 2)</li><li>2(m + 7)</li><li>7(p + 3)</li><li>3(x - 3)</li><li>4(a - 3)</li><li>5(y - 4)</li><li>6(m - 3)</li><li>8(p - 2)</li><li>10(k - 3)</li></ol></div>
+  </section>
+
+  <section id="level2" class="lesson exercise">
+    <div class="lesson-head"><span class="num">L2</span><div><h2>Level 2 · Medium</h2><p>두 괄호, 완전제곱, 두 제곱의 차</p></div></div>
+    <h3>2.1 Expand the following expressions.</h3><ol class="questions"><li>(x + 2)(x + 3)</li><li>(x + 4)(x + 5)</li><li>(x + 1)(x + 7)</li><li>(x + 6)(x + 2)</li><li>(x - 2)(x - 3)</li><li>(x - 4)(x - 5)</li><li>(x - 1)(x - 8)</li><li>(x - 6)(x - 3)</li><li>(x + 2)(x - 5)</li><li>(x + 6)(x - 1)</li><li>(x - 4)(x + 7)</li><li>(x - 8)(x + 3)</li></ol>
+    <h3>2.2 Expand the following perfect squares.</h3><ol class="questions"><li>(x + 2)²</li><li>(x + 3)²</li><li>(x + 5)²</li><li>(x + 7)²</li><li>(x - 2)²</li><li>(x - 4)²</li><li>(x - 6)²</li><li>(x - 9)²</li></ol>
+    <h3>2.3 Expand the following expressions using the difference of two squares.</h3><ol class="questions"><li>(x + 2)(x - 2)</li><li>(x + 5)(x - 5)</li><li>(x + 7)(x - 7)</li><li>(x + 10)(x - 10)</li><li>(a + 3)(a - 3)</li><li>(y + 4)(y - 4)</li><li>(m + 6)(m - 6)</li><li>(p + 8)(p - 8)</li></ol>
+    <button class="reveal" data-target="ans-l2">Show Level 2 answers</button>
+    <div id="ans-l2" class="answer hidden"><h4>2.1</h4><ol class="questions"><li>x² + 5x + 6</li><li>x² + 9x + 20</li><li>x² + 8x + 7</li><li>x² + 8x + 12</li><li>x² - 5x + 6</li><li>x² - 9x + 20</li><li>x² - 9x + 8</li><li>x² - 9x + 18</li><li>x² - 3x - 10</li><li>x² + 5x - 6</li><li>x² + 3x - 28</li><li>x² - 5x - 24</li></ol><h4>2.2</h4><ol class="questions"><li>x² + 4x + 4</li><li>x² + 6x + 9</li><li>x² + 10x + 25</li><li>x² + 14x + 49</li><li>x² - 4x + 4</li><li>x² - 8x + 16</li><li>x² - 12x + 36</li><li>x² - 18x + 81</li></ol><h4>2.3</h4><ol class="questions"><li>x² - 4</li><li>x² - 25</li><li>x² - 49</li><li>x² - 100</li><li>a² - 9</li><li>y² - 16</li><li>m² - 36</li><li>p² - 64</li></ol></div>
+  </section>
+
+  <section id="level3" class="lesson exercise">
+    <div class="lesson-head"><span class="num">L3</span><div><h2>Level 3 · Hard</h2><p>이차식과 두 제곱의 차 인수분해</p></div></div>
+    <h3>3.1 Factorise the following quadratic expressions.</h3><ol class="questions"><li>x² + 5x + 6</li><li>x² + 7x + 12</li><li>x² + 9x + 20</li><li>x² + 11x + 30</li><li>x² - 5x + 6</li><li>x² - 7x + 12</li><li>x² - 9x + 20</li><li>x² - 11x + 30</li><li>x² + x - 6</li><li>x² - x - 12</li><li>x² + 2x - 15</li><li>x² - 3x - 18</li></ol>
+    <h3>3.2 Factorise the following quadratic expressions fully.</h3><ol class="questions"><li>2x² + 5x + 3</li><li>2x² + 7x + 3</li><li>3x² + 10x + 3</li><li>3x² + 11x + 6</li><li>4x² + 8x + 3</li><li>5x² + 11x + 2</li><li>2x² - 5x + 3</li><li>3x² - 7x + 2</li><li>4x² - 12x + 9</li><li>6x² - 13x + 6</li></ol>
+    <h3>3.3 Factorise the following expressions fully.</h3><ol class="questions"><li>x² - 16</li><li>x² - 49</li><li>x² - 81</li><li>a² - 25</li><li>y² - 36</li><li>4x² - 9</li><li>9x² - 16</li><li>25x² - 4</li><li>16a² - 81</li><li>36y² - 49</li></ol>
+    <button class="reveal" data-target="ans-l3">Show Level 3 answers</button>
+    <div id="ans-l3" class="answer hidden"><h4>3.1</h4><ol class="questions"><li>(x + 2)(x + 3)</li><li>(x + 3)(x + 4)</li><li>(x + 4)(x + 5)</li><li>(x + 5)(x + 6)</li><li>(x - 2)(x - 3)</li><li>(x - 3)(x - 4)</li><li>(x - 4)(x - 5)</li><li>(x - 5)(x - 6)</li><li>(x + 3)(x - 2)</li><li>(x - 4)(x + 3)</li><li>(x + 5)(x - 3)</li><li>(x - 6)(x + 3)</li></ol><h4>3.2</h4><ol class="questions"><li>(2x + 3)(x + 1)</li><li>(2x + 1)(x + 3)</li><li>(3x + 1)(x + 3)</li><li>(3x + 2)(x + 3)</li><li>(2x + 1)(2x + 3)</li><li>(5x + 1)(x + 2)</li><li>(2x - 3)(x - 1)</li><li>(3x - 1)(x - 2)</li><li>(2x - 3)²</li><li>(3x - 2)(2x - 3)</li></ol><h4>3.3</h4><ol class="questions"><li>(x - 4)(x + 4)</li><li>(x - 7)(x + 7)</li><li>(x - 9)(x + 9)</li><li>(a - 5)(a + 5)</li><li>(y - 6)(y + 6)</li><li>(2x - 3)(2x + 3)</li><li>(3x - 4)(3x + 4)</li><li>(5x - 2)(5x + 2)</li><li>(4a - 9)(4a + 9)</li><li>(6y - 7)(6y + 7)</li></ol></div>
+  </section>
+
+  <section id="level4" class="lesson exercise">
+    <div class="lesson-head"><span class="num">L4</span><div><h2>Level 4 · Application</h2><p>전개와 인수분해를 혼합한 응용 문제</p></div></div>
+    <h3>4.1 Expand and simplify the following expressions.</h3><ol class="questions"><li>3(x + 4) + 2(x + 1)</li><li>5(x - 2) + 4(x + 3)</li><li>2(a + 5) - 3(a - 1)</li><li>6(y - 4) - 2(y + 3)</li><li>4(x + 2)(x + 3)</li><li>2(x - 5)(x + 1)</li><li>3(x + 4)(x - 2)</li><li>5(x - 1)(x - 6)</li><li>(x + 3)² - 4</li><li>(x - 5)² + 2x</li><li>(x + 2)(x - 2) + 3x</li><li>(x + 6)(x - 6) - x²</li></ol>
+    <h3>4.2 Factorise the following expressions fully.</h3><ol class="questions"><li>6x + 9</li><li>8y - 12</li><li>12a + 18</li><li>15m - 25</li><li>4x² + 8x</li><li>6a² - 9a</li><li>10y² + 15y</li><li>12m² - 18m</li><li>3x² + 12x + 12</li><li>2x² - 8x + 8</li><li>5a² - 20</li><li>4y² - 36</li></ol>
+    <h3>4.3 Factorise the following cubic expressions.</h3><ol class="questions"><li>x³ + 8</li><li>x³ - 8</li><li>x³ + 27</li><li>x³ - 27</li><li>x³ + 64</li><li>x³ - 64</li><li>a³ + 1</li><li>a³ - 1</li><li>8x³ + 27</li><li>27x³ - 8</li></ol>
+    <button class="reveal" data-target="ans-l4">Show Level 4 answers</button>
+    <div id="ans-l4" class="answer hidden"><h4>4.1</h4><ol class="questions"><li>5x + 14</li><li>9x + 2</li><li>-a + 13</li><li>4y - 30</li><li>4x² + 20x + 24</li><li>2x² - 8x - 10</li><li>3x² + 6x - 24</li><li>5x² - 35x + 30</li><li>x² + 6x + 5</li><li>x² - 8x + 25</li><li>x² + 3x - 4</li><li>-36</li></ol><h4>4.2</h4><ol class="questions"><li>3(2x + 3)</li><li>4(2y - 3)</li><li>6(2a + 3)</li><li>5(3m - 5)</li><li>4x(x + 2)</li><li>3a(2a - 3)</li><li>5y(2y + 3)</li><li>6m(2m - 3)</li><li>3(x + 2)²</li><li>2(x - 2)²</li><li>5(a + 2)(a - 2)</li><li>4(y + 3)(y - 3)</li></ol><h4>4.3</h4><ol class="questions"><li>(x + 2)(x² - 2x + 4)</li><li>(x - 2)(x² + 2x + 4)</li><li>(x + 3)(x² - 3x + 9)</li><li>(x - 3)(x² + 3x + 9)</li><li>(x + 4)(x² - 4x + 16)</li><li>(x - 4)(x² + 4x + 16)</li><li>(a + 1)(a² - a + 1)</li><li>(a - 1)(a² + a + 1)</li><li>(2x + 3)(4x² - 6x + 9)</li><li>(3x - 2)(9x² + 6x + 4)</li></ol></div>
+  </section>
+
+  <section id="level5" class="lesson exercise">
+    <div class="lesson-head"><span class="num">L5</span><div><h2>Level 5 · Practice Exam Questions</h2><p>Answer all questions. Give your answers in simplified form where appropriate.</p></div></div>
+    <ol class="exam-list"><li>Consider the expansion of <b>(2x - 3)⁴</b>.<br>(a) Write down the first three terms in descending powers of x. <b>[3]</b><br>(b) Find the constant term. <b>[2]</b></li><li>Consider the expansion of <b>(2x + y)⁴</b>.<br>(a) Write down the expansion in full. <b>[3]</b><br>(b) Hence find the coefficient of x²y². <b>[1]</b></li><li>The quadratic expression x² + px + q has roots 2 and -5.<br>(a) Write the expression in factorised form. <b>[2]</b><br>(b) Find the values of p and q. <b>[3]</b></li><li>The graph of y = x² + px + q cuts the x-axis at x = -3 and x = 4.<br>Find the values of p and q. <b>[5]</b></li><li>Factorise fully.<br>(a) x² - 9 <b>[1]</b><br>(b) 4x² - 25 <b>[2]</b><br>(c) x² + 7x + 12 <b>[2]</b><br>(d) 2x² + 7x + 3 <b>[3]</b></li><li>Factorise fully.<br>6x²y - 9xy² + 3xy <b>[4]</b></li><li>Expand and simplify.<br>(2x - 3)(x + 5) - (x - 4)² <b>[5]</b></li><li>Let f(x) = x² - 6x + 8.<br>(a) Factorise f(x). <b>[2]</b><br>(b) Hence solve f(x) = 0. <b>[2]</b><br>(c) Write f(x) in the form (x - h)² + k. <b>[3]</b></li><li>The expression ax² + bx + 6 can be factorised as (2x - 3)(x - 2).<br>Find the values of a and b. <b>[4]</b></li><li>The expression x² + kx + 16 is a perfect square.<br>Find the possible values of k. <b>[4]</b></li><li>Factorise fully.<br>x³ - 4x² + 4x <b>[4]</b></li><li>Expand and simplify.<br>(3x + 2)² - (x - 5)(x + 5) <b>[5]</b></li><li>The expression x² + ax + b is equal to (x - 7)(x + 2).<br>Find the values of a and b. <b>[4]</b></li><li>Solve the equation x² - 5x - 14 = 0. <b>[4]</b></li><li>Solve the equation 2x² + 5x - 3 = 0. <b>[5]</b></li><li>Factorise fully.<br>(a) x³ - 27 <b>[2]</b><br>(b) 8x³ + 1 <b>[2]</b><br>(c) x³ - 6x² + 9x <b>[2]</b></li><li>Expand and simplify (x + 3)(x - 3) + (x + 2)² <b>[4]</b></li></ol>
+    <button class="reveal" data-target="ans-l5">Show Practice Exam answers</button>
+    <div id="ans-l5" class="answer hidden"><ol class="questions"><li>(a) 16x⁴ - 96x³ + 216x²  (b) 81</li><li>(a) 16x⁴ + 32x³y + 24x²y² + 8xy³ + y⁴  (b) 24</li><li>(a) (x - 2)(x + 5)  (b) p = 3, q = -10</li><li>p = -1, q = -12</li><li>(a) (x - 3)(x + 3)  (b) (2x - 5)(2x + 5)  (c) (x + 3)(x + 4)  (d) (2x + 1)(x + 3)</li><li>3xy(2x - 3y + 1)</li><li>x² + 15x - 31</li><li>(a) (x - 2)(x - 4)  (b) x = 2 or x = 4  (c) (x - 3)² - 1</li><li>a = 2, b = -7</li><li>k = 8 or k = -8</li><li>x(x - 2)²</li><li>8x² + 12x + 29</li><li>a = -5, b = -14</li><li>x = 7 or x = -2</li><li>x = 1/2 or x = -3</li><li>(a) (x - 3)(x² + 3x + 9)  (b) (2x + 1)(4x² - 2x + 1)  (c) x(x - 3)²</li><li>2x² + 4x - 5</li></ol></div>
+  </section>
+
+  <section id="answers" class="lesson">
+    <div class="lesson-head"><span class="num">✓</span><div><h2>Exercise 2 Answer</h2><p>전체 정답표</p></div></div>
+    <div class="answer-grid">
+      <details><summary>Level 1 · Easy</summary><h4>1.1</h4><ol class="questions"><li>2x + 6</li><li>4x + 20</li><li>3a + 6</li><li>5y + 20</li><li>6m + 6</li><li>7p + 14</li><li>3x - 12</li><li>5a - 15</li><li>2y - 12</li><li>4m - 20</li><li>6p - 12</li><li>8k - 8</li></ol><h4>1.2</h4><ol class="questions"><li>3(x + 2)</li><li>4(x + 2)</li><li>5(a + 2)</li><li>6(y + 2)</li><li>2(m + 7)</li><li>7(p + 3)</li><li>3(x - 3)</li><li>4(a - 3)</li><li>5(y - 4)</li><li>6(m - 3)</li><li>8(p - 2)</li><li>10(k - 3)</li></ol></details>
+      <details><summary>Level 2 · Medium</summary><h4>2.1</h4><ol class="questions"><li>x² + 5x + 6</li><li>x² + 9x + 20</li><li>x² + 8x + 7</li><li>x² + 8x + 12</li><li>x² - 5x + 6</li><li>x² - 9x + 20</li><li>x² - 9x + 8</li><li>x² - 9x + 18</li><li>x² - 3x - 10</li><li>x² + 5x - 6</li><li>x² + 3x - 28</li><li>x² - 5x - 24</li></ol><h4>2.2</h4><ol class="questions"><li>x² + 4x + 4</li><li>x² + 6x + 9</li><li>x² + 10x + 25</li><li>x² + 14x + 49</li><li>x² - 4x + 4</li><li>x² - 8x + 16</li><li>x² - 12x + 36</li><li>x² - 18x + 81</li></ol><h4>2.3</h4><ol class="questions"><li>x² - 4</li><li>x² - 25</li><li>x² - 49</li><li>x² - 100</li><li>a² - 9</li><li>y² - 16</li><li>m² - 36</li><li>p² - 64</li></ol></details>
+      <details><summary>Level 3 · Hard</summary><h4>3.1</h4><ol class="questions"><li>(x + 2)(x + 3)</li><li>(x + 3)(x + 4)</li><li>(x + 4)(x + 5)</li><li>(x + 5)(x + 6)</li><li>(x - 2)(x - 3)</li><li>(x - 3)(x - 4)</li><li>(x - 4)(x - 5)</li><li>(x - 5)(x - 6)</li><li>(x + 3)(x - 2)</li><li>(x - 4)(x + 3)</li><li>(x + 5)(x - 3)</li><li>(x - 6)(x + 3)</li></ol><h4>3.2</h4><ol class="questions"><li>(2x + 3)(x + 1)</li><li>(2x + 1)(x + 3)</li><li>(3x + 1)(x + 3)</li><li>(3x + 2)(x + 3)</li><li>(2x + 1)(2x + 3)</li><li>(5x + 1)(x + 2)</li><li>(2x - 3)(x - 1)</li><li>(3x - 1)(x - 2)</li><li>(2x - 3)²</li><li>(3x - 2)(2x - 3)</li></ol><h4>3.3</h4><ol class="questions"><li>(x - 4)(x + 4)</li><li>(x - 7)(x + 7)</li><li>(x - 9)(x + 9)</li><li>(a - 5)(a + 5)</li><li>(y - 6)(y + 6)</li><li>(2x - 3)(2x + 3)</li><li>(3x - 4)(3x + 4)</li><li>(5x - 2)(5x + 2)</li><li>(4a - 9)(4a + 9)</li><li>(6y - 7)(6y + 7)</li></ol></details>
+      <details><summary>Level 4 · Application</summary><h4>4.1</h4><ol class="questions"><li>5x + 14</li><li>9x + 2</li><li>-a + 13</li><li>4y - 30</li><li>4x² + 20x + 24</li><li>2x² - 8x - 10</li><li>3x² + 6x - 24</li><li>5x² - 35x + 30</li><li>x² + 6x + 5</li><li>x² - 8x + 25</li><li>x² + 3x - 4</li><li>-36</li></ol><h4>4.2</h4><ol class="questions"><li>3(2x + 3)</li><li>4(2y - 3)</li><li>6(2a + 3)</li><li>5(3m - 5)</li><li>4x(x + 2)</li><li>3a(2a - 3)</li><li>5y(2y + 3)</li><li>6m(2m - 3)</li><li>3(x + 2)²</li><li>2(x - 2)²</li><li>5(a + 2)(a - 2)</li><li>4(y + 3)(y - 3)</li></ol><h4>4.3</h4><ol class="questions"><li>(x + 2)(x² - 2x + 4)</li><li>(x - 2)(x² + 2x + 4)</li><li>(x + 3)(x² - 3x + 9)</li><li>(x - 3)(x² + 3x + 9)</li><li>(x + 4)(x² - 4x + 16)</li><li>(x - 4)(x² + 4x + 16)</li><li>(a + 1)(a² - a + 1)</li><li>(a - 1)(a² + a + 1)</li><li>(2x + 3)(4x² - 6x + 9)</li><li>(3x - 2)(9x² + 6x + 4)</li></ol></details>
+      <details><summary>Level 5 · Practice Exam Questions</summary><ol class="questions"><li>(a) 16x⁴ - 96x³ + 216x²  (b) 81</li><li>(a) 16x⁴ + 32x³y + 24x²y² + 8xy³ + y⁴  (b) 24</li><li>(a) (x - 2)(x + 5)  (b) p = 3, q = -10</li><li>p = -1, q = -12</li><li>(a) (x - 3)(x + 3)  (b) (2x - 5)(2x + 5)  (c) (x + 3)(x + 4)  (d) (2x + 1)(x + 3)</li><li>3xy(2x - 3y + 1)</li><li>x² + 15x - 31</li><li>(a) (x - 2)(x - 4)  (b) x = 2 or x = 4  (c) (x - 3)² - 1</li><li>a = 2, b = -7</li><li>k = 8 or k = -8</li><li>x(x - 2)²</li><li>8x² + 12x + 29</li><li>a = -5, b = -14</li><li>x = 7 or x = -2</li><li>x = 1/2 or x = -3</li><li>(a) (x - 3)(x² + 3x + 9)  (b) (2x + 1)(4x² - 2x + 1)  (c) x(x - 3)²</li><li>2x² + 4x - 5</li></ol></details>
+    </div>
+  </section>
+
+  <div style="display:flex;justify-content:space-between;gap:12px;margin-top:28px;">
+    <a class="btn" href="algebra.html">← Chapter 1 · Simple Algebra</a>
+    <a class="btn primary" href="index.html">Back to Home</a>
+  </div>
+</main>
+
+<footer>
+<strong>IBMP</strong>
+<p>Independent practice for IB Mathematics.</p>
+<p class="disclaimer">IBMP is an independent educational resource and is not affiliated with or endorsed by the International Baccalaureate Organization.</p>
+</footer>
+</body>
+</html>
