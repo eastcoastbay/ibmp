@@ -1,1 +1,66 @@
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#fbfbfc;color:#1c1d22;line-height:1.6}a{text-decoration:none;color:inherit}.header{max-width:1180px;margin:auto;padding:24px 28px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:24px;font-weight:800}.header nav{display:flex;gap:20px;color:#666b77}.hero{max-width:1180px;margin:60px auto;padding:20px 28px 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.hero h1,.page h1{font-size:58px;line-height:1.05;letter-spacing:-.05em;margin:0 0 18px}.hero h1 span{color:#6e65d8}.hero p,.lead{font-size:18px;color:#6c7180}.btn{display:inline-block;margin-top:18px;padding:12px 18px;background:#1f2025;color:white;border-radius:10px;font-weight:700}.preview,.featured,.lesson,.vocab-box{background:white;border:1px solid #e2e4ea;border-radius:16px}.preview{padding:24px}.pill{display:inline-block;background:#efedff;color:#5f56cc;padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800}.formula{font-family:Georgia,serif;font-size:28px;margin:32px 0}.section,.page{max-width:980px;margin:auto;padding:56px 28px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;color:#6e65d8;margin-bottom:12px}.section h2,.vocab-box h2,.lesson h2{font-size:30px;letter-spacing:-.03em}.featured{padding:24px;display:flex;justify-content:space-between;align-items:center}.vocab-box{padding:28px;background:linear-gradient(180deg,#faf9ff,#fff);margin:28px 0}.muted{color:#747985}.vocab-table{width:100%;border-collapse:collapse;margin-top:20px;overflow:hidden;border-radius:12px}.vocab-table th,.vocab-table td{padding:13px 15px;border-bottom:1px solid #ececf1;text-align:left}.vocab-table th{background:#f2f0ff;color:#4f4a9f}.vocab-table td:first-child{font-weight:700;color:#333}.lesson{padding:26px;margin:20px 0}.note{padding:16px 18px;background:#fafafa;border-radius:12px;margin:12px 0}.disclaimer{font-size:11px;color:#777;margin-top:5px}footer{max-width:1180px;margin:auto;border-top:1px solid #e4e6eb;padding:30px 28px 46px;color:#707580}@media(max-width:760px){.hero{grid-template-columns:1fr}.hero h1,.page h1{font-size:42px}.vocab-table th,.vocab-table td{padding:11px 10px;font-size:14px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#181a20;background:#fbfbfc;line-height:1.58}a{text-decoration:none;color:inherit}.header{max-width:1180px;margin:auto;padding:24px 28px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:24px;font-weight:800;letter-spacing:-.05em}.header nav{display:flex;gap:22px;color:#626774;font-size:14px}.hero{max-width:1180px;margin:70px auto 20px;padding:0 28px 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.hero h1,.page h1{font-size:62px;line-height:1.03;letter-spacing:-.055em;margin:0 0 20px}.hero h1 span{color:#6e65d8}.hero p,.lead{font-size:19px;color:#686d79}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;color:#6e65d8;margin-bottom:14px}.actions{display:flex;gap:10px;margin-top:28px}.btn,.reveal{padding:12px 17px;border:1px solid #dadce4;background:white;border-radius:10px;font-weight:700;cursor:pointer}.btn.primary{background:#1f2025;color:white;border-color:#1f2025}.preview,.card,.featured,.mini,.lesson,.key-box,.example,.toc{background:white;border:1px solid #e2e4ea;border-radius:16px}.preview{padding:22px;box-shadow:0 12px 35px rgba(20,20,35,.06)}.preview-top{display:flex;justify-content:space-between;font-size:14px}.preview-top span:last-child,.pill{background:#efedff;color:#5f56cc;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:800}.formula{font-family:Georgia,serif;text-align:center;font-size:28px;margin:34px 0}.rule-stack{display:grid;gap:10px}.rule-stack div{display:flex;gap:12px;align-items:center;background:#f7f7fa;border-radius:10px;padding:11px}.rule-stack span{display:inline-flex;min-width:44px;justify-content:center;color:#6e65d8;font-weight:800}.preview small{display:block;margin-top:18px;color:#7b808c}.section{max-width:1180px;margin:auto;padding:72px 28px}.section h2{font-size:38px;letter-spacing:-.04em;margin:0 0 28px}.grid{display:grid;gap:14px}.four{grid-template-columns:repeat(4,1fr)}.three{grid-template-columns:repeat(3,1fr)}.card{padding:22px;min-height:180px}.card b{color:#6e65d8}.card p{color:#747985}.card span{font-size:13px;font-weight:800}.featured{padding:26px;display:flex;justify-content:space-between;align-items:center}.featured h3{font-size:28px;margin:14px 0 8px}.featured p{color:#737883}.arrow{font-size:34px;color:#6e65d8}.mini{padding:18px;display:flex;justify-content:space-between}.mini small{color:#969aa5}.page{max-width:900px;margin:70px auto;padding:0 28px 90px}.page.wide{max-width:980px}.page h1{font-size:54px}.chapter-meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.chapter-meta span{font-size:12px;padding:6px 10px;border-radius:999px;background:#f0f1f5;color:#626774}.toc{padding:22px;margin:30px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:9px 18px}.toc .eyebrow{grid-column:1/-1;margin-bottom:2px}.toc a{font-size:14px;color:#505662}.toc a:hover{color:#6e65d8}.lesson{padding:28px;margin:24px 0}.lesson-head{display:flex;gap:18px;align-items:flex-start}.lesson-head h2{margin:0;font-size:30px;letter-spacing:-.035em}.lesson-head p{margin:4px 0 0;color:#737883}.num{display:inline-flex;min-width:48px;height:42px;border-radius:12px;background:#efedff;color:#5f56cc;align-items:center;justify-content:center;font-weight:800;padding:0 10px}.key-box,.example{padding:18px;margin-top:18px}.key-box{background:#faf9ff}.key-box p{margin:8px 0}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:#6e65d8;margin-bottom:8px}.solution,.answer{margin-top:12px;background:#f6f6f8;border-radius:10px;padding:14px}.exercise h3{margin-top:28px;font-size:17px}.questions{display:grid;grid-template-columns:1fr 1fr;gap:8px 44px;padding-left:26px}.questions li{padding:3px 0}.reveal{margin-top:18px}.hidden{display:none}.key-list{display:grid;gap:8px}.exam-list{display:grid;gap:20px}.exam-list li{padding:14px;background:#fafafa;border-radius:12px}.note{margin-top:18px;background:#fff8e8;border:1px solid #f0dfad;padding:14px;border-radius:10px;color:#6e6040;font-size:13px}.answer-grid{display:grid;gap:12px;margin-top:20px}details{background:#fafafa;border:1px solid #e3e4e8;border-radius:12px;padding:14px}summary{cursor:pointer;font-weight:800;color:#4f4b9a}.disclaimer{font-size:11px;max-width:760px}footer{max-width:1180px;margin:auto;border-top:1px solid #e4e6eb;padding:32px 28px 48px;color:#717681}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1,.page h1{font-size:44px}.four{grid-template-columns:1fr 1fr}.three,.toc,.questions{grid-template-columns:1fr}}@media(max-width:520px){.four{grid-template-columns:1fr}.actions{flex-direction:column}.lesson{padding:20px}.lesson-head{gap:12px}.lesson-head h2{font-size:25px}}
+
+.vocabulary-section{
+  margin:30px 0;
+  padding:28px;
+  border:1px solid #dedcf7;
+  border-radius:18px;
+  background:linear-gradient(180deg,#faf9ff 0%,#ffffff 100%);
+}
+.vocab-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+}
+.vocab-head h2{
+  margin:0 0 6px;
+  font-size:30px;
+  letter-spacing:-.035em;
+}
+.vocab-head p{
+  margin:0;
+  color:#737883;
+}
+.vocab-count{
+  flex:0 0 auto;
+  padding:7px 11px;
+  border-radius:999px;
+  background:#efedff;
+  color:#5f56cc;
+  font-size:12px;
+  font-weight:800;
+}
+.vocab-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:22px;
+}
+.vocab-card{
+  min-height:76px;
+  padding:15px 16px;
+  border:1px solid #e5e3fa;
+  border-radius:13px;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.vocab-card strong{
+  color:#4f4a9f;
+  font-size:15px;
+  line-height:1.3;
+}
+.vocab-card span{
+  margin-top:6px;
+  color:#5f6470;
+  font-size:14px;
+}
+@media(max-width:800px){
+  .vocab-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+  .vocab-grid{grid-template-columns:1fr}
+  .vocab-head{flex-direction:column}
+}
